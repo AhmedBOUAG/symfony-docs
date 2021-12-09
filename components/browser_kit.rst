@@ -289,7 +289,7 @@ history::
     use Acme\Client;
 
     $client = new Client();
-    $client->request('GET', '/');
+    $crawler = $client->request('GET', '/');
 
     // select and click on a link
     $link = $crawler->selectLink('Documentation')->link();
